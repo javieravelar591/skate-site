@@ -21,12 +21,6 @@ The site also utilizes the following additional dependencies that can be install
 4. MySql await
 5. Bcrypt
 
-Database Login information:
-Username: C4131F23U23
-Password: 579
-
 ## Running the site
 To run the site from the Project root folder, the user needs to type in the following command:
 ```node server.js ```
-
-You can either run this by ssh-ing into a UMN lab machine and use live-server port forwarding (you will have to set host to the UMN MySql server) or by using the tunnel.js
