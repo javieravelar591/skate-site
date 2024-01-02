@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="/resources/js/edit.js")
+        link(rel='stylesheet', type='text/css', href='/resources/css/main.css')
+        title Edit Your Post
+    body
+        h1.edit-header Edit your post
+        div.edit-div
+            p= message
+            p= post_id
+            p Edit Your Post
+            form(action='/api/edit', method='post')
+                label(for='edit-message') 
+                input.edit-post(type='text' name='edit-message' placeholder=message)
+            br
+            label(for='submit-edits')
+                input#submit-edit-button(type='submit' value='edit')
+                

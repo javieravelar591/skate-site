@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(src="/resources/js/main.js")
+        link(rel='stylesheet', type='text/css', href='/resources/css/main.css')
+        title Thread Pool
+    body
+        include nav.pug 
+        div.main-content
+            h1 Your Pool
+            //- h1 Trending
+            div.create-post
+                form(action='/main', method='post')
+                    label(for='userpost')
+                    input#post-input(type='text', name='userpost', placeholder='Jump right in!')
+                    br
+
+                    label(for='submit-post')
+                    input#confirm-post(type='submit', value='Post')
+            div.sort-div
+                p sort by: 
+                    button(type="button" class="sort-button" order='likes') likes
+                    button(type="button" class="sort-button" order='time_posted') time
+            div.post-container
+                each post in posts 
+                    div.post-data(post_id=post.post_id, user_id=post.user_id)
+                        p.post-message= post.post_message 
+                        //- p= cur_user
+                        //- p= post.user_id
+                        div.post-info
+                            p.numlikes= post.likes
+                            p= `Posted by: ${post.user_id}`
+                            p= post.time_posted
+                        button(type="button" class="like-button") +
+                        button(type="button" class="downvote-button") -
+                        //- p= post.user_id
+                        //- p= cur_user
+                        if cur_user == post.user_id
+                            button(type="button" class="delete-button") x
+                            a(href="/edit")
+                                button(type="button" class="edit-button" href='/edit') Edit
+            footer
+                p pages

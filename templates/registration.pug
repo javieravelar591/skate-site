@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', type='text/css', href='/resources/css/main.css')
+        title Register
+    body 
+        h1.registration-header Join the Party!
+        div.registration-div
+            form(action='/register', method='post')
+                label(for='username') Username: 
+                input#post-input(type='text', name='username', placeholder='Username')
+                br
+
+                label(for='password') Password: 
+                input#post-input(type='text', name='password', placeholder='Password')
+                br
+
+                label(for='submit-post')
+                input#confirm-post(type='submit', value='Register') 
+                br

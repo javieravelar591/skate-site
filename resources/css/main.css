@@ -1,0 +1,192 @@
+/* All pages */
+body {
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    color: #5072A7;
+    font-size: 30px;
+    font-family: 'fantasy';
+}
+
+/* nav could use a little bit of tweaking */
+.sidenav img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.sidenav {
+    background-color: #5072A7;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 88px;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.sidenav li {
+    padding: 10px;
+    width: 75%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav li:hover {
+    background-color: darkslateblue;
+}
+
+.main-content {
+    width: 80%;
+    height: 100%;
+    border-style: solid;
+    border-color: rgb(80, 114, 167, .5);
+    border-width: .5px;
+    position: absolute;
+    top:5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+.post-container {
+    border-style: solid;
+    border-width: .5px;
+    border-color: rgb(80, 114, 167, .5);
+    border-top-color: rgb(0,0,0,0);
+    border-left-color: rgb(0,0,0,0);
+}
+
+/* Main content block */
+.main-content h1 {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    /* border-style: solid;
+    border-width: .5px;
+    border-color: rgb(80, 114, 167, .5);
+    border-top-color: rgb(0,0,0,0);
+    border-left-color: rgb(0,0,0,0); */
+}
+
+.post-data {
+    /* padding-top: 5%; */
+    padding-bottom: 25px;
+    border-style: solid;
+    border-width: .5px;
+    border-color: rgb(80, 114, 167, .5);
+    border-top-color: rgb(0,0,0,0);
+    border-left-color: rgb(0,0,0,0);
+    border-right-color: rgb(0,0,0,0);
+}
+
+.post-data p {
+    margin-bottom: 10px;
+    font-size: 20;
+    font-family: Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+footer {
+   text-align: center; 
+}
+/* .main-content post {
+    border-top: rgb(80, 114, 167, .5);
+    border-bottom: rgb(80, 114, 167, .5);
+} */
+
+.delete-button,
+.like-button,
+.downvote-button,
+.edit-button,
+.submit-edit-button,
+.sort-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(80, 114, 167);
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
+.create-post {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: .5px;
+    border-bottom-color: rgb(80, 114, 167, .5);
+}
+
+#confirm-post {
+    cursor: pointer;
+    background-color: rgb(80, 114, 167);
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    float: left;
+}
+
+#post-input {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    justify-content: center;
+}
+
+.post-info {
+    font-size: 10px;
+}
+
+.post-info p {
+    display: inline-block;
+}
+
+
+.login-div,
+.registration-div,
+.edit-div {
+    margin: auto;
+    margin-top: 20%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 33%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(80, 114, 167);
+}
+
+.login-header,
+.registration-header,
+.edit-header {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+/* Friends page */
+
+div.friends {
+    margin: auto;
+    margin-left: 100px;
+    padding-left: 15px;
+}
